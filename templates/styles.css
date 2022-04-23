@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    min-height: 47rem;
+    background: #00071d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/img1.webp) no-repeat center/cover;
+    & form {
+        width: 900px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        flex-wrap: wrap;
+        h1 {
+            margin: 0 6rem;
+            color: #fff;
+            font-weight: 500;
+            font-size: 3rem;
+            margin-top: 50px;
+            width: 500px;
+            text-align: center;
+        }
+        & input {
+            color: #fff;
+            width: 300px;
+            height: 50px;
+            margin: 0 30px;
+            padding-left: 15px;
+            outline: none;
+            border: none;
+            font-size: 15px;
+            margin-bottom: 20px;
+            background: none;
+            border-bottom: 3px solid #fff;
+            &::placeholder {
+                color: #fff;
+            }
+        }
+        #lastName,
+        #mobile {
+            margin-left: 20px;
+        }
+        h4 {
+            color: #fff;
+            font-weight: 300;
+            width: 600px;
+            margin-bottom: 20px;
+        }
+        & textarea {
+            background: none;
+            border: none;
+            border-bottom: 2px solid #fff;
+            color: #fff;
+            font-weight: 200;
+            font-size: 15px;
+            padding: 10px;
+            outline: none;
+            min-width: 700px;
+            max-width: 700px;
+            min-height: 90px;
+            max-height: 90px;
+            &::-webkit-scrollbar {
+                width: 1em;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: rgba(194, 194, 194, 0.713);
+            }
+        }
+        #button {
+            border: none;
+            background: #fff;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 20px;
+            color: #333;
+            width: 100px;
+            padding: 0;
+            margin-right: 630px;
+            margin-bottom: 30px;
+            transition: 0.3s;
+            &:hover {
+                background-size: 400%;
+                background: linear-gradient(45deg, #01083d, #01aaff, #0323f4);
+                color: white;
+                opacity: 0.8;
+            }
+        }
+    }
+}
